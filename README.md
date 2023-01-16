@@ -14,3 +14,10 @@ const DataRender = () => {
   return <Base64 mode="decode" data={DATA}/>
 }
 ```
+
+## Installation
+
+```
+yarn add react-base64
+```
+
