@@ -17,10 +17,8 @@ const Base64 = (props: Base64Props) => {
   switch(props.mode) {
     case "encode":
       return <p>{utf8_to_b64(props.data)}</p>
-      break;
     case "decode":
       return <p>{b64_to_utf8(props.data)}</p>
-      break;
   }
 }
 
