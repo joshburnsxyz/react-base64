@@ -1,0 +1,11 @@
+{
+  "name": "react-base64",
+  "version": "1.0.0",
+  "description": "Handle base64 encoded data within react",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Burns",
+  "license": "MIT"
+}
