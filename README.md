@@ -15,6 +15,21 @@ const DataRender = () => {
 }
 ```
 
+The library also includes a `Base64Raw` component that will render the data without wrapping it in a
+HTML `<p>`  tag first.
+
+
+```jsx
+import Base64Raw from 'react-base64'
+
+const DATA = "SGVsbG8sIFdvcmxkIQo="
+
+
+const DataRender = () => {
+  return <Base64Raw mode="decode" data={DATA}/>
+}
+```
+
 ## Installation
 
 ```
