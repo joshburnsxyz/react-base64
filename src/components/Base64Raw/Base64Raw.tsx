@@ -3,7 +3,6 @@ import React from 'react'
 export interface Base64RawProps {
   data: string
   mode: string
-  className: string
 }
 
 const utf8_to_b64 = (str: string) => {
