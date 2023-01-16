@@ -3,7 +3,6 @@ import React from 'react'
 export interface Base64Props {
   data: string
   mode: string
-  className: string
 }
 
 const utf8_to_b64 = (str: string) => {
@@ -17,18 +16,9 @@ const b64_to_utf8 = (str: string) => {
 const Base64 = (props: Base64Props) => {
   switch(props.mode) {
     case "encode":
-      return <p className={props.className}>{utf8_to_b64(props.data)}</p>
+      return <p>{utf8_to_b64(props.data)}</p>
     case "decode":
-      return <p className={props.className}>{b64_to_utf8(props.data)}</p>
-  }
-}
-
-export const Base64Raw = (props: Base64Props) => {
-  switch(props.mode) {
-    case "encode":
-      return <>{utf8_to_b64(props.data)}</>
-    case "decode":
-      return <>{b64_to_utf8(props.data)}</>
+      return <p>{b64_to_utf8(props.data)}</p>
   }
 }
 
