@@ -23,4 +23,13 @@ const Base64 = (props: Base64Props) => {
   }
 }
 
+export const Base64Raw = (props: Base64Props) => {
+  switch(props.mode) {
+    case "encode":
+      return <>{utf8_to_b64(props.data)}</>
+    case "decode":
+      return <>{b64_to_utf8(props.data)}</>
+  }
+}
+
 export default Base64
