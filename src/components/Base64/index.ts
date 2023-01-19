@@ -1,4 +1,1 @@
-export {
-  default,
-  Base64Raw
-} from "./Base64"
+export { default } from "./Base64"
